@@ -4,14 +4,7 @@
 const body = document.body;
 const hero = document.querySelector('.hero');
 const nav = document.querySelector('nav');
-<<<<<<< HEAD
 const navLinks = document.querySelectorAll('.nav-menu a');
-=======
-const sections = document.querySelectorAll('section, .hero');
-const navLinks = document.querySelectorAll('.top-nav .nav-menu li a');
-let currentSection = 0;
-let isScrolling = false;
->>>>>>> upstream/main
 
 // =========================
 // HERO ACTIVE AO CARREGAR
@@ -32,11 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('show');
             } else {
-<<<<<<< HEAD
                 entry.target.classList.remove('show');
-=======
-                entry.target.classList.remove('show'); 
->>>>>>> upstream/main
             }
         });
     }, options);
@@ -44,11 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
     faders.forEach(fader => observer.observe(fader));
     cards.forEach((card, i) => {
         observer.observe(card);
-<<<<<<< HEAD
         card.style.transitionDelay = `${i * 0.15}s`;
-=======
-        card.style.transitionDelay = `${i * 0.15}s`; 
->>>>>>> upstream/main
     });
 });
 
@@ -72,31 +57,19 @@ window.addEventListener('scroll', () => {
     // Mostrar nav
     // -------------------------
     if (scrollY > heroHeight - 50) {
-<<<<<<< HEAD
         nav.classList.add('visible');
-=======
-        nav.classList.add('visible'); 
->>>>>>> upstream/main
     } else {
         nav.classList.remove('visible');
     }
 
     if (scrollY > heroHeight / 2) {
-<<<<<<< HEAD
         nav.classList.add('active');
-=======
-        nav.classList.add('active'); 
->>>>>>> upstream/main
     } else {
         nav.classList.remove('active');
     }
 
     if (scrollY > 50) {
-<<<<<<< HEAD
         nav.classList.add('scrolled');
-=======
-        nav.classList.add('scrolled'); 
->>>>>>> upstream/main
     } else {
         nav.classList.remove('scrolled');
     }
@@ -111,29 +84,6 @@ document.getElementById('mouse').addEventListener('click', () => {
 });
 
 // =========================
-<<<<<<< HEAD
-=======
-// SCROLL “TRAVA” POR SEÇÃO
-// =========================
-window.addEventListener('wheel', (e) => {
-    if (isScrolling) return;
-    isScrolling = true;
-
-    if (e.deltaY > 0 && currentSection < sections.length - 1) {
-        currentSection++;
-    } else if (e.deltaY < 0 && currentSection > 0) {
-        currentSection--;
-    }
-
-    sections[currentSection].scrollIntoView({ behavior: 'smooth' });
-
-    setTimeout(() => {
-        isScrolling = false;
-    }, 1000);
-});
-
-// =========================
->>>>>>> upstream/main
 // CLICK NOS LINKS DO MENU - SCROLL SUAVE
 // =========================
 navLinks.forEach(link => {
@@ -145,19 +95,6 @@ navLinks.forEach(link => {
             targetSection.scrollIntoView({ behavior: 'smooth' });
         }
     });
-<<<<<<< HEAD
-=======
-
-    // -------------------------
-    // Ativar link apenas no hover
-    // -------------------------
-    link.addEventListener('mouseenter', () => {
-        link.classList.add('active');
-    });
-    link.addEventListener('mouseleave', () => {
-        link.classList.remove('active');
-    });
->>>>>>> upstream/main
 });
 
 // ==========================
@@ -179,4 +116,3 @@ toggle.addEventListener('click', () => {
 if (localStorage.getItem('theme') === 'dark') {
     document.body.classList.add('dark');
 }
-

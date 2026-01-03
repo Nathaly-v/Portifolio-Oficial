@@ -4,7 +4,6 @@
 :root {
   /* Cores base (LIGHT) */
   --bg: #ffffff;
-<<<<<<< HEAD
   --text: #000000;
   --text-muted: #333333;
   --accent: #0077ff;
@@ -21,24 +20,6 @@
   /* Hero */
   --hero-filter: none;
   --hero-overlay: transparent;
-=======
-  --text: #000000;          
-  --text-muted: #333333;
-  --accent: #0077ff;        
-  --surface: #ffffff;
-  --surface-2: #f6f8fa;
-  --card-bg: rgba(0,0,0,0.03);
-  --border: rgba(0,0,0,0.12);
-  --nav-bg: rgba(255,255,255,0.9);
-
-  /* Efeitos */
-  --hover-accent: #0cbae6;
-  --shadow: 0 8px 20px rgba(0,0,0,0.08);
-
-  /* Hero */
-  --hero-filter: none;         
-  --hero-overlay: transparent;  
->>>>>>> upstream/main
 
   /* Gradiente seção clara */
   --about-gradient: linear-gradient(135deg, #b2dcfa, #ffffff);
@@ -46,7 +27,6 @@
 
 /* DARK THEME: */
 body.dark {
-<<<<<<< HEAD
   --bg: #0d1117;
   --text: #ffffff;
   --text-muted: #d0d7de;
@@ -60,27 +40,8 @@ body.dark {
   --hover-accent: #33a1ff;
   --shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
 
-
   --hero-filter: brightness(0.6) grayscale(40%);
   --hero-overlay: radial-gradient(1200px 600px at 70% -100px, rgba(255, 255, 255, 0.06), transparent 60%);
-=======
-  --bg: #0d1117;            
-  --text: #ffffff;        
-  --text-muted: #d0d7de;
-  --accent: #0077ff;          
-  --surface: #0f1620;
-  --surface-2: #0b1220;
-  --card-bg: rgba(255,255,255,0.04);
-  --border: rgba(255,255,255,0.14);
-  --nav-bg: rgba(13,17,23,0.9);
-
-  --hover-accent: #33a1ff;
-  --shadow: 0 8px 24px rgba(0,0,0,0.45);
-
-
-  --hero-filter: brightness(0.6) grayscale(40%);
-  --hero-overlay: radial-gradient(1200px 600px at 70% -100px, rgba(255,255,255,0.06), transparent 60%);
->>>>>>> upstream/main
 
   /* Gradiente seção sobre (dark) */
   --about-gradient: linear-gradient(135deg, #0d1117, #0b1321);
@@ -95,17 +56,12 @@ body.dark {
   box-sizing: border-box;
 }
 
-<<<<<<< HEAD
 html,
 body {
   height: 100vh;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-=======
-html{
-  height: 100%;
->>>>>>> upstream/main
 }
 
 body {
@@ -113,7 +69,6 @@ body {
   background: var(--bg);
   color: var(--text);
   transition: background 0.4s ease, color 0.4s ease, filter 0.4s ease;
-<<<<<<< HEAD
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
@@ -144,21 +99,6 @@ a {
 a:hover {
   color: var(--hover-accent);
 }
-=======
-  height: 100%;
-  overflow-y: scroll;
-  scroll-snap-type: y mandatory;
-}
-
-.text { color: var(--text) !important; }
-.text-muted { color: var(--text-muted) !important; }
-.text-azul { color: var(--accent) !important; }
-.border-accent { border-color: var(--accent) !important; }
-
-/* Links sempre azuis, hover com variação */
-a { color: var(--accent); text-decoration: none; }
-a:hover { color: var(--hover-accent); }
->>>>>>> upstream/main
 
 /* =========================
    NAVEGAÇÃO
@@ -183,11 +123,7 @@ nav.active {
   opacity: 1;
   transform: translateY(0);
   background: transparent !important;
-<<<<<<< HEAD
 }
-=======
-}  
->>>>>>> upstream/main
 
 nav.visible {
   background: var(--nav-bg);
@@ -251,10 +187,7 @@ nav a {
   text-align: center;
   overflow: hidden;
   font-size: 2rem;
-<<<<<<< HEAD
   scroll-snap-align: start;
-=======
->>>>>>> upstream/main
 }
 
 .hero-bg {
@@ -293,7 +226,6 @@ body:not(.hero-active) .hero-bg {
   animation: moveFog 150s linear infinite;
 }
 
-<<<<<<< HEAD
 .fog {
   top: 300px;
   background: url('../images/fumaca_tileable1.png') repeat-x;
@@ -312,14 +244,6 @@ body:not(.hero-active) .hero-bg {
   100% {
     transform: translateX(-50%);
   }
-=======
-.fog { top: 300px; background: url('../images/fumaca_tileable1.png') repeat-x; }
-.fog-top { bottom: 50px; background: url('../images/fumacatopo.png') repeat-x; }
-
-@keyframes moveFog {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
->>>>>>> upstream/main
 }
 
 body.dark .hero-bg,
@@ -329,26 +253,18 @@ body.dark .fog-top {
 }
 
 /* Conteúdo do Hero */
-<<<<<<< HEAD
 .hero-content {
   margin: 0;
   padding: 0;
 }
 
-=======
-.hero-content { margin: 0; padding: 0; }
->>>>>>> upstream/main
 .hero-content h1 {
   font-family: 'Sen', sans-serif;
   font-size: 5rem;
   font-weight: 800;
   letter-spacing: 0.1rem;
   margin-bottom: 0.5rem;
-<<<<<<< HEAD
   color: var(--text);
-=======
-  color: var(--text); 
->>>>>>> upstream/main
 }
 
 .frase-impacto {
@@ -378,25 +294,15 @@ body.dark .fog-top {
   flex-direction: column;
   align-items: center;
   gap: 10px;
-<<<<<<< HEAD
   cursor: pointer;
   pointer-events: auto;
   z-index: 10;
-=======
-  cursor: pointer; 
-  pointer-events: auto; 
-  z-index: 10; 
->>>>>>> upstream/main
 }
 
 .mouse {
   width: 25px;
   height: 40px;
-<<<<<<< HEAD
   border: 2px solid var(--text);
-=======
-  border: 2px solid var(--text); 
->>>>>>> upstream/main
   border-radius: 15px;
   position: relative;
 }
@@ -412,7 +318,6 @@ body.dark .fog-top {
   left: 50%;
   transform: translateX(-50%);
   animation: wheelMove 1s infinite;
-<<<<<<< HEAD
   border: 2px solid #0077ff;
 }
 
@@ -428,13 +333,6 @@ body.dark .fog-top {
     top: 20px;
     opacity: 0;
   }
-=======
-  border: 2px solid #0077ff; 
-}
-@keyframes wheelMove {
-  0%, 100% { top: 5px; opacity: 1; }
-  50% { top: 20px; opacity: 0; }
->>>>>>> upstream/main
 }
 
 /* =========================
@@ -450,7 +348,6 @@ body.dark .fog-top {
   padding: 4rem;
   background: var(--about-gradient);
   z-index: 0;
-<<<<<<< HEAD
   scroll-snap-align: start;
   scroll-snap-stop: always;
 }
@@ -458,24 +355,13 @@ body.dark .fog-top {
 .sobre {
   flex: 1 1 40%;
 }
-=======
-}
-
-.sobre { flex: 1 1 40%; }
->>>>>>> upstream/main
 
 .sobre h2 {
   font-family: 'Sen', sans-serif;
   font-size: 2.5rem;
   margin-bottom: 2rem;
-  margin-top: 25rem;
-<<<<<<< HEAD
   color: var(--accent);
-=======
-  color: var(--accent); 
->>>>>>> upstream/main
   text-align: center;
-  margin-right: 90px;
 }
 
 .sobre p {
@@ -483,10 +369,8 @@ body.dark .fog-top {
   font-size: 1.3rem;
   line-height: 1.5;
   color: var(--text-muted);
-  margin-bottom: 24rem;
   max-width: 600px;
   text-align: justify;
-  margin-left: 120px;
 }
 
 /* =========================
@@ -566,7 +450,6 @@ footer {
    BOTÃO DE TEMA 
 ========================= */
 .toggle-btn {
-<<<<<<< HEAD
   background: none;
   border: none;
   font-size: 1.5rem;
@@ -582,41 +465,16 @@ footer {
   transform: translateY(-2px);
   filter: brightness(1.05);
 }
-=======
-  background: none;       
-  border: none;            
-  font-size: 1.5rem;       
-  cursor: pointer;         
-  position: fixed;        
-  top: 20px;               
-  right: 20px;
-  z-index: 1000;          
-  padding: 0;             
-}
-.toggle-btn:hover { transform: translateY(-2px); filter: brightness(1.05); }
->>>>>>> upstream/main
 
 /* =========================
    TIPOGRAFIA ADICIONAL 
 ========================= */
-/* Fonte Vienna (se usar) */
-@font-face {
-  font-family: 'Vienna';
-  src: url('caminho/para/vienna-font.otf') format('opentype');
-  font-weight: normal;
-  font-style: normal;
-}
-
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&display=swap');
-<<<<<<< HEAD
 
 code,
 pre {
   font-family: 'Fira Code', monospace;
 }
-=======
-code, pre { font-family: 'Fira Code', monospace; }
->>>>>>> upstream/main
 
 /* =========================
    RESPONSIVIDADE
@@ -626,21 +484,16 @@ code, pre { font-family: 'Fira Code', monospace; }
     flex-direction: column;
     padding: 10px;
   }
-<<<<<<< HEAD
 
   .nav-left {
     margin-bottom: 10px;
   }
-=======
-  .nav-left { margin-bottom: 10px; }
->>>>>>> upstream/main
 
   nav ul {
     flex-direction: column;
     gap: 10px;
   }
 
-<<<<<<< HEAD
   .hero-content h1 {
     font-size: 3rem;
   }
@@ -649,23 +502,11 @@ code, pre { font-family: 'Fira Code', monospace; }
     flex: 1 1 100%;
   }
 
-=======
-  .hero-content h1 { font-size: 3rem; }
-  .sobre {
-    flex: 1 1 100%;
-  }
->>>>>>> upstream/main
   .sobre h2 {
-    margin-top: 6rem;
     margin-right: 0;
   }
-<<<<<<< HEAD
 
-=======
->>>>>>> upstream/main
   .sobre p {
-    margin-left: 0;
-    margin-bottom: 6rem;
     padding: 0 1rem;
   }
 
@@ -673,10 +514,7 @@ code, pre { font-family: 'Fira Code', monospace; }
     grid-template-columns: 1fr;
   }
 }
-<<<<<<< HEAD
 
-=======
->>>>>>> upstream/main
 /* =========================
    PROJETOS
 ========================= */
@@ -744,13 +582,6 @@ code, pre { font-family: 'Fira Code', monospace; }
   .projetos-grid {
     grid-template-columns: 1fr;
   }
-}
-<<<<<<< HEAD
-
-=======
->>>>>>> upstream/main
-.tela-inteira {
-  scroll-snap-align: start;
 }
 
 /* =========================
@@ -823,10 +654,8 @@ code, pre { font-family: 'Fira Code', monospace; }
 }
 
 /* =========================
-   ANIMAÇÕES DE ENTRADA E CARDS EM CASCATA
+   ANIMAÇÕES DE ENTRADA
 ========================= */
-
-
 .fade-up {
   opacity: 0;
   transform: translateY(20px);
@@ -837,7 +666,6 @@ code, pre { font-family: 'Fira Code', monospace; }
   opacity: 1;
   transform: translateY(0);
 }
-
 
 .card {
   opacity: 0;
@@ -852,13 +680,8 @@ code, pre { font-family: 'Fira Code', monospace; }
 
 .card:hover {
   transform: translateY(-5px);
-<<<<<<< HEAD
   box-shadow: 0 12px 25px rgba(0, 0, 0, 0.35);
-=======
-  box-shadow: 0 12px 25px rgba(0,0,0,0.35);
->>>>>>> upstream/main
 }
-
 
 .expertise-card.fade-up,
 .projeto-card.fade-up {
@@ -873,22 +696,9 @@ code, pre { font-family: 'Fira Code', monospace; }
   transition-delay: 0.1s;
 }
 
-
 /* =========================
    Toggle Switch Lua/Sol
 ========================= */
-.toggle-btn {
-<<<<<<< HEAD
-  background: transparent;
-  border: none;
-  cursor: pointer;
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  z-index: 1000;
-  padding: 0;
-}
-
 .toggle-track {
   width: 60px;
   height: 28px;
@@ -932,59 +742,4 @@ body.dark .toggle-thumb .icon-sun {
 
 body.dark .toggle-thumb .icon-moon {
   display: none;
-=======
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    z-index: 1000;
-    padding: 0;
-}
-
-.toggle-track {
-    width: 60px;
-    height: 28px;
-    background: var(--surface-2);
-    border-radius: 14px;
-    border: 2px solid var(--accent);
-    position: relative;
-    display: flex;
-    align-items: center;
-    padding: 2px;
-    transition: background 0.3s ease;
-}
-
-.toggle-thumb {
-    width: 24px;
-    height: 24px;
-    background: var(--accent);
-    border-radius: 50%;
-    position: absolute;
-    top: 2px;
-    left: 2px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: left 0.3s ease, background 0.3s ease;
-    font-size: 14px;
-}
-
-.toggle-thumb .icon-sun {
-    display: none;
-}
-
-body.dark .toggle-thumb {
-    left: 34px;
-    background: #ffffff;
-}
-
-body.dark .toggle-thumb .icon-sun {
-    display: block;
-}
-
-body.dark .toggle-thumb .icon-moon {
-    display: none;
->>>>>>> upstream/main
 }
