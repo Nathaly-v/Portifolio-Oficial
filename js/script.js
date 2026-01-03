@@ -95,6 +95,19 @@ navLinks.forEach(link => {
             targetSection.scrollIntoView({ behavior: 'smooth' });
         }
     });
+<<<<<<< HEAD
+=======
+
+    // -------------------------
+    // Ativar link apenas no hover
+    // -------------------------
+    link.addEventListener('mouseenter', () => {
+        link.classList.add('active');
+    });
+    link.addEventListener('mouseleave', () => {
+        link.classList.remove('active');
+    });
+    upstream/main
 });
 
 // ==========================
