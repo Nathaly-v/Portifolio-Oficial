@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio Oficial - Nathyzinha</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Playfair+Display:wght@400;700&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sen:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<main>
+
+    <!-- ================= HOME / HERO ================= -->
+    <section id="home" class="hero">
+        <img src="images/nuvem-grande.jpg" alt="Nuvens" class="hero-bg">
+        <div class="fog-top"></div>
+        <div class="fog"></div>
+
+        <button class="toggle-btn" id="dark-mode-toggle">
+        <div class="toggle-track">
+            <div class="toggle-thumb">
+            <span class="icon-moon">🌧</span>
+            <span class="icon-sun">🌤</span>
+            </div>
+        </div>
+        </button>
+
+        <div class="hero-content">
+            <h1 class="fade-up">NATHALY VITÓRIA</h1>
+            <p class="funcao fade-up">ANALISTA DE TI JR | INFRAESTRUTURA | SUPORTE | CLOUD</p>
+            <p class="frase-impacto fade-up">
+                Tecnologia e Segurança aplicadas para manter sistemas estáveis, acessíveis e confiáveis.
+            </p>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse" id="mouse">
+                <span class="wheel"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= HEADER / NAV ================= -->
+    <header>
+        <nav>
+            <div class="nav-left">
+                <a href="#home" class="logo">NATHALY VITÓRIA</a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#projetos">Projects</a></li>
+                <li><a href="#cloud-security">Cloud Security</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ================= SOBRE ================= -->
+    <section id="sobre" class="tela-inteira fade-up">
+
+        <div class="sobre fade-up">
+            <h2>VENHA ME CONHECER</h2>
+            <p>
+                Sou Analista de TI em formação, com base sólida em sistemas operacionais,
+                redes, Linux, cloud e segurança. Tenho experiência prática com ambientes
+                Windows e Linux, troubleshooting, automação básica e serviços em nuvem (AWS).
+                <br><br>
+                Meu foco é atuar em suporte e infraestrutura, garantindo estabilidade,
+                segurança e bom funcionamento dos sistemas, com visão de crescimento para
+                cloud e segurança no médio prazo.
+            </p>
+        </div>
+
+        <section class="expertise">
+            <h2 class="section-title fade-up">HARD SKILLS</h2>
+
+            <div class="expertise-grid">
+                <div class="expertise-card card fade-up">
+                    <div class="card-header">
+                        <i class="icon">💻</i>
+                        <h3><span class="highlight">Sistemas</span> Operacionais</h3>
+                    </div>
+                    <p>Linux / Windows / CLI</p>
+                </div>
+
+                <div class="expertise-card card fade-up">
+                    <div class="card-header">
+                        <i class="icon">☁️</i>
+                        <h3><span class="highlight">Redes</span></h3>
+                    </div>
+                    <p>TCP/IP, DNS, DHCP</p>
+                </div>
+
+                <div class="expertise-card card fade-up">
+                    <div class="card-header">
+                        <i class="icon">🔒</i>
+                        <h3><span class="highlight">Cloud</span> Fundamentals</h3>
+                    </div>
+                    <p>AWS</p>
+                </div>
+
+                <div class="expertise-card card fade-up">
+                    <div class="card-header">
+                        <i class="icon">🛠️</i>
+                        <h3><span class="highlight">Segurança</span> Básica</h3>
+                    </div>
+                    <p>OWASP Top 10, princípios de segurança, hardening</p>
+                </div>
+
+                <div class="expertise-card card fade-up">
+                    <div class="card-header">
+                        <i class="icon">🤖</i>
+                        <h3><span class="highlight">Backend</span> Python</h3>
+                    </div>
+                    <p>Automação, scripts, APIs REST básicas</p>
+                </div>
+
+                <div class="expertise-card card fade-up">
+                    <div class="card-header">
+                        <i class="icon">🛠️</i>
+                        <h3><span class="highlight">Cloud</span> Security</h3>
+                    </div>
+                    <p>Em estudo / foco futuro</p>
+                </div>
+            </div>
+        </section>
+
+    </section>
+
+    <!-- ================= PROJETOS ================= -->
+    <section id="projetos" class="tela-inteira projetos fade-up">
+
+        <div class="projetos-container fade-up">
+
+            <h2 class="section-title fade-up">PROJETOS</h2>
+
+            <div class="projetos-grid">
+                <div class="projeto-card card fade-up">
+                    <h3><span class="highlight">Infraestrutura</span> Linux Local</h3>
+                    <p class="descricao">Ambiente Linux configurado do zero para simular suporte.</p>
+                    <p class="stack">Linux · CLI · Logs · Processos</p>
+                </div>
+
+                <div class="projeto-card card fade-up">
+                    <h3><span class="highlight">Rede</span> Local Simulada</h3>
+                    <p class="descricao">Diagnóstico de IP, DNS e conectividade.</p>
+                    <p class="stack">TCP/IP · DNS · DHCP</p>
+                </div>
+
+                <div class="projeto-card card fade-up">
+                    <h3><span class="highlight">Cloud</span> AWS Fundamentals</h3>
+                    <p class="descricao">EC2, S3, VPC e conceitos iniciais.</p>
+                    <p class="stack">AWS · EC2 · S3 · VPC</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- ================= CLOUD SECURITY ================= -->
+    <section id="cloud-security" class="tela-inteira cloud-security fade-up">
+
+        <div class="cloud-container fade-up">
+
+            <h2 class="section-title fade-up"><span class="highlight">CLOUD</span> SECURITY</h2>
+
+            <p class="cloud-subtitle fade-up">Área em construção — estudo ativo e evolução contínua</p>
+
+            <div class="cloud-content fade-up">
+
+                <p class="cloud-text fade-up">
+                    Estudo estruturado baseado nos Tech Guides da Alura e na Carreira de
+                    Cloud Security, com foco em fundamentos sólidos antes da prática avançada.
+                </p>
+
+                <ul class="cloud-list fade-up">
+                    <li>Fundamentos de Cloud Computing (AWS)</li>
+                    <li>IAM e controle de acessos</li>
+                    <li>Redes em nuvem (VPC, subnets, security groups)</li>
+                    <li>Princípios de segurança da informação</li>
+                    <li>OWASP Top 10</li>
+                    <li>Hardening e postura de segurança</li>
+                </ul>
+
+                <div class="em-construcao fade-up">
+                    🚧 Cloud Security em construção 🚧
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+<footer>
+    <p>© 2025 Nathaly</p>
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
