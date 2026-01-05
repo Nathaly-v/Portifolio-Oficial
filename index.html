@@ -7,6 +7,11 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Playfair+Display:wght@400;700&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Sen:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -16,31 +21,41 @@
     <!-- ================= HOME / HERO ================= -->
     <section id="home" class="hero">
         <img src="images/nuvem-grande.jpg" alt="Nuvens" class="hero-bg">
+
         <div class="fog-top"></div>
         <div class="fog"></div>
 
+        <!-- Toggle Dark Mode -->
         <button class="toggle-btn" id="dark-mode-toggle">
-        <div class="toggle-track">
-            <div class="toggle-thumb">
-            <span class="icon-moon">🌧</span>
-            <span class="icon-sun">🌤</span>
+            <div class="toggle-track">
+                <div class="toggle-thumb">
+                    <span class="icon-moon">🌧</span>
+                    <span class="icon-sun">🌤</span>
+                </div>
             </div>
-        </div>
         </button>
 
-        <div class="hero-content">
-            <h1 class="fade-up">NATHALY VITÓRIA</h1>
-            <p class="funcao fade-up">ANALISTA DE TI JR | INFRAESTRUTURA | SUPORTE | CLOUD</p>
-            <p class="frase-impacto fade-up">
-                Tecnologia e Segurança aplicadas para manter sistemas estáveis, acessíveis e confiáveis.
-            </p>
-        </div>
+        <h1 class="hero-name fade-up">
+            <span class="sobrenome gradient-vitoria"> NATHALY VITÓRIA </span>
+        </h1>
+
+        <p class="funcao fade-up">
+            <span id="typewriter"></span>
+        </p>
+
+        <p class="frase-impacto fade-up">
+            Tecnologia e Segurança aplicadas para manter sistemas estáveis, acessíveis e confiáveis.
+        </p>
+
+
+        <!-- Indicador de Scroll -->
         <div class="scroll-indicator">
             <div class="mouse" id="mouse">
                 <span class="wheel"></span>
             </div>
         </div>
     </section>
+
 
     <!-- ================= HEADER / NAV ================= -->
     <header>
